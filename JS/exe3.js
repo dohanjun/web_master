@@ -4,7 +4,7 @@
 // 3. 최고값, 최소값 -> 입력숫자는 3개.
 
 
-let question = 2;
+let question = 3;
 
 
 
@@ -27,4 +27,38 @@ else if (question == 2) {
 }
 else if (question == 3) {
  //3번 코드.
+ let test1 = prompt("첫번째 숫자를 입력해 주세요");
+let test2 = prompt("두번째 숫자를 입력해 주세요");
+let test3 = prompt("세번째 숫자를 입력해 주세요");
+let max = 0,
+  min = 0;
+if (test1 > test2) {
+  if (test2 > test3) {
+    max = test1;
+    min = test3;
+  } else if (test3 > test2) {
+    if (test1 > test3) {
+      max = test1;
+      min = test2;
+    } else if (test3 > test1) {
+      max = test3;
+      min = test2;
+    }
+  }
+} else if (test2 > test1) {
+  if (test1 > test3) {
+    max = test2;
+    min = test3;
+  } else if (test3 > test1) {
+    if (test2 > test3) {
+      max = test2;
+      min = test1;
+    } else if (test3 > test2) {
+      max = test3;
+      min = test1;
+   ////
+    
+    }
+  }
+}
 }

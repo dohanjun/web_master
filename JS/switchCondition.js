@@ -1,8 +1,8 @@
 //switchCondition.js
 
-let asd = 'D';
+let grade = 'D';
 
-switch(asd) {
+switch(grade) {
   case 'A':
     document.write('90 ~ 100 사이의 점수');
     break;
