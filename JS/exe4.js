@@ -1,36 +1,30 @@
-let name1 = prompt("첫번째 숫자를 입력해 주세요");
-let name2 = prompt("두번째 숫자를 입력해 주세요");
-let name3 = prompt("세번째 숫자를 입력해 주세요");
-let max = 0, min = 0;
+// exe4.js
+// 2024년 11월 12일 숙제.
+// 우리반에는 5명의 친구. 성적을 입력
+// 합산 => 평균, 최고점수, 최저점수 구해서
+// 우리반 평균은 ??이고, 최고점은 ??이고, 최저점은 ??이다.
 
-if (name1 > name2) {
-  if (name2 > name3) {
-    max = name1;
-    min = name3;
-  } else {
-    if (name3 > name2) {
-      min = name2;
-      if (name1 > name3){
-        max = name1
-      }else {
-        max = name3
-      }
-    }
+document.querySelector('#inputValue').remove(); // 요소(element) 삭제
+document.querySelector('#addBtn').remove();  // 요소(element) 삭제
+document.querySelector('span').remove(); // 요소(element) 삭제
+
+console.log('exer.js')
+
+let numAry = [];
+let max = 0;
+let min = 100;
+let average = 0;
+let sum = 0;
+
+for (let i=1; i <= 5; i++) {
+  let numAry = prompt('반친구의 점수를 입력')
+  sum = sum + parseInt(numAry);
+  if(max < numAry) {
+    max = numAry;
   }
-} else {
-  if (name2 > name3) {
-    if (name3 > name1)
-      max = name2;
-      min = name1;
-  } else {
-    if (name1 > name3) {
-      min = name3;
-    }
-    if(name2 = name1){
-      max = name2
-    }else {
-      
-    }
+  if(min > numAry) {
+    min = numAry;
   }
 }
-console.log("최대값은" + max + "이고 최소값은" + min "이다.");
+average = sum / numAry.length;
+document.write(`우리반 평균은${average}이고, 최고점은 ${max}이며 최저점은${min}이다.`)
