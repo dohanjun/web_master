@@ -20,13 +20,18 @@ document.querySelector('span').remove(); // 요소(element) 삭제
 // };
 
 
-let numAry = [23, 66, 92, 71, 52, 49];
-let sum = 0;
 
-for (let i = 0; i < numAry.length; i++) {
+
+// let numAry = [23, 66, 92, 71, 52, 49];
+// let sum = 0;
+
+// for (let i = 0; i < numAry.length; i++) {
   
-  if (numAry[i] % 2 == 1){
-    sum += numAry[i];
-  };
-}
-document.write(`홀수의 합은 ${sum}입니다.`)
+//   if (numAry[i] % 2 == 1){
+//     sum += numAry[i];
+//   }
+// }
+// document.write(`홀수의 합은 ${sum}입니다.`);
+
+
+
