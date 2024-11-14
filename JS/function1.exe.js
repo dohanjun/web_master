@@ -14,3 +14,20 @@ function getMaxvalue(jongwoo) {
   }
   return max;
 }
+
+
+// console.log(parseInt(Math.random() * 10 + 1));
+
+//
+
+// function makeNumberFnc() {
+//   let randomAry = []
+//   for (let i = 1; i <= 5; i++) {
+//     let temp = parseInt(Math.random() * 10) + 11;
+//     randomAry.push(temp);
+//   }
+//   console.log(randomAry);
+//   let sum = sumAry(randomAry);
+//   return sum;
+// }
+// console.log(`임의의 배열의 합은 ${makeNumberFnc()}입니다.`)
