@@ -71,7 +71,7 @@ let jongwoo = (e) => {
   }
   document.querySelector('#result').value = result;
 }
-document.querySelector('#add').addEventListener('click', jongwoo);
+// document.querySelector('#add').addEventListener('click', jongwoo);
 
 document.querySelector('#add').addEventListener('click', jongwoo);// 이벤트 핸들러함수()
 document.querySelector('#sub').addEventListener('click', jongwoo);// 이벤트 핸들러함수()

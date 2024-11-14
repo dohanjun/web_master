@@ -20,7 +20,7 @@ console.log(Math.PI);
 
 
 for (let i=1; i <= 5; i++) {
-  console.log(parseInt(Math.random() * 10 + 1));
+  console.log(parseInt(Math.random() * 45 + 1));
 }
 
 //반복문의 종류는 2가지이다 for과 while 가있다
